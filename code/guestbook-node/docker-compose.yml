@@ -2,9 +2,15 @@ version: '2'
 services:
   redis:
     image: redis:alpine
-  web:
+  web1:
     build: .
     ports:
       - "8088:3000"
+    depends_on:
+      - redis
+  web2:
+    build: .
+    ports:
+      - "8089:3000"
     depends_on:
       - redis
