@@ -25,11 +25,6 @@ docker pull mhart/alpine-node:latest
 
 * During workshop the following ports are used: `80`, `8088` and the range `4000-4010`. If they are not available on your machine, adjust the CLI commands accordingly.
 
-### Chat
-![Members online on Docker Barcelona Slack](https://dockerbcn.herokuapp.com/badge.svg)
-
-Join [Docker Barcelona Slack](https://dockerbcn.herokuapp.com)! 
-
 ### Docker Cheat Sheet:
 
 We've wrote a page with some useful docker commands: [Harbur's docker-cheat-sheet](https://github.com/harbur/docker-cheat-sheet).
