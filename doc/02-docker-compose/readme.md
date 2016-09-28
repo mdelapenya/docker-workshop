@@ -1,4 +1,6 @@
-# [![harbur.io](https://harbur.io/logo/Color/Logo/Harbur-40x40.png)](http://harbur.io) Docker Workshop - Docker Compose
+[![www.liferay.com](https://web.liferay.com/image/image_gallery?uuid=6f04350d-5873-48e2-88c8-200b48a77ad4&groupId=5912873&t=1325511154018)](https://www.liferay.com)
+
+# Workshop - Docker Compose
 
 
 This section will show how to use Docker Compose with some small exercises and with a simple Node/Redis app. Before starting, you'll need to have [Docker Compose installed](https://docs.docker.com/compose/install/).
