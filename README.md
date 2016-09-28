@@ -27,7 +27,7 @@ docker pull mhart/alpine-node:latest
 
 ### Docker Cheat Sheet:
 
-We've wrote a page with some useful docker commands: [Harbur's docker-cheat-sheet](https://github.com/harbur/docker-cheat-sheet).
+Harbur's team wrote a page with some useful docker commands: [Harbur's docker-cheat-sheet](https://github.com/harbur/docker-cheat-sheet).
 
 # Credits
 
