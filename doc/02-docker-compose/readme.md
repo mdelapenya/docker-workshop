@@ -198,9 +198,9 @@ The goal of this exercise is:
 
 # Navigation 
 
-Previous | Next 
-:------- | ---: 
-← [Docker Workshop - Docker machine](../01-docker-machine) | [Docker Workshop - Home](https://github.com/harbur/docker-workshop) →
+Previous | Next
+:------- | ---:
+← [Docker Workshop - Docker machine](../01-docker-machine) | [Docker Workshop - Home](https://github.com/mdelapenya/docker-workshop) →
 
 # Credits
 

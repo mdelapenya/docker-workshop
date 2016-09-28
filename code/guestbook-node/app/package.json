@@ -1,7 +1,7 @@
 {
   "name": "guestbook",
   "version": "1.0.0",
-  "description": "Guestbook test app for Harbur's Docker Workshop",
+  "description": "Guestbook test app for Liferay's Docker Workshop",
   "main": "main.js",
   "dependencies": {
     "body-parser": "^1.15.0",

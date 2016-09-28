@@ -11,7 +11,7 @@ The Workshop is separated in three sections:
 ### Preparations:
 
 * [Install Docker](https://docs.docker.com/engine/installation/)
-* Clone this repo: `git clone https://github.com/harbur/docker-workshop` (Some code examples require files located here)
+* Clone this repo: `git clone https://github.com/mdelapenya/docker-workshop` (Some code examples require files located here)
 * Warm-up the images:
 
 ```

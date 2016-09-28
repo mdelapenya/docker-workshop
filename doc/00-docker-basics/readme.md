@@ -266,9 +266,9 @@ open "http://$(docker-machine ip default):${$(docker port registry-hello 80)##*:
 
 # Navigation 
 
-Previous | Next 
-:------- | ---: 
-← [Docker Workshop - Home](https://github.com/harbur/docker-workshop) | [Docker Workshop - Docker machine](../01-docker-machine) →
+Previous | Next
+:------- | ---:
+← [Docker Workshop - Home](https://github.com/mdelapenya/docker-workshop) | [Docker Workshop - Docker machine](../01-docker-machine) →
 
 # Credits
 
