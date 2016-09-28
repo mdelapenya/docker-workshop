@@ -272,4 +272,4 @@ Previous | Next
 
 # Credits
 
-This workshop was prepared by [harbur.io](http://harbur.io), under MIT License. Feel free to fork and improve.
+This workshop was prepared by [harbur.io](http://harbur.io), and adapted for Liferay's internal purpose by [Liferay, Inc.](https://www.liferay.com), under MIT License. Feel free to fork and improve.
