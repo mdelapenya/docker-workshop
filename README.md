@@ -10,6 +10,7 @@ The Workshop is separated in three sections:
 
 ### Preparations:
 
+* If you don't know anything about Docker, please see [this presentation](http://www.slideshare.net/ManueldelaPeaPea/docker-zero).
 * [Install Docker](https://docs.docker.com/engine/installation/)
 * Clone this repo: `git clone https://github.com/mdelapenya/docker-workshop` (Some code examples require files located here)
 * Warm-up the images:
