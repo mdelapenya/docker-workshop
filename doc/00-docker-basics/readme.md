@@ -217,7 +217,7 @@ ADD site /usr/share/nginx/html
 
 * Build your website with Dockerfile
 * Run an instance
-* Share your (non-localhost) url on [Slack](https://dockerbcn.herokuapp.com)
+* Share your (non-localhost) url with your buddies
 
 ### PUSH Image to a Registry
 
