@@ -196,7 +196,11 @@ The goal of this exercise is:
 - Understand how to expose ports
 - Be able to run at the same time the two `web` containers
 
-# Navigation 
+## Exercise 3 (10 min)
+
+Start a released Liferay portal, the version you like, connected to the database server of your preference, using Docker compose.
+
+# Navigation
 
 Previous | Next
 :------- | ---:
