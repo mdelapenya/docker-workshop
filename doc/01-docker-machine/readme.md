@@ -114,20 +114,20 @@ To become `root` inside the machine:
 sudo -i
 ```
 
-## Environment variables
-
-Docker client is configured by environment variables to connect with remote daemons. The following command outputs the variables for connecting to previously created `client1` VM.
-
-```shell
-docker-machine env client1
-```
-
 ## Active Machine
 
 To get the active machine's name do:
 
 ```shell
 docker-machine active
+```
+
+## Environment variables
+
+Docker client is configured by environment variables to connect with remote daemons. The following command outputs the variables for connecting to previously created `client1` VM.
+
+```shell
+docker-machine env client1
 ```
 
 ## Cleanup
