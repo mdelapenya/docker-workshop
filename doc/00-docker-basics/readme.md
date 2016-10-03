@@ -119,7 +119,7 @@ open "http://localhost:4001"
 
 * Build a static website
 * Run it on your machine
-* Share your (non-localhost) url on [Slack](https://dockerbcn.herokuapp.com)
+* Share your (non-localhost) url with your buddies
 
 # Dockerfile Basics
 
