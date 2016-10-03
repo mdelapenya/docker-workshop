@@ -116,10 +116,10 @@ sudo -i
 
 ## Environment variables
 
-Docker client is configured by environment variables to connect with remote daemons. The following command outputs the variables for connecting to previously created `default` VM.
+Docker client is configured by environment variables to connect with remote daemons. The following command outputs the variables for connecting to previously created `client1` VM.
 
 ```shell
-docker-machine env default
+docker-machine env client1
 ```
 
 ## Active Machine
