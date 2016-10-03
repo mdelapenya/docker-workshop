@@ -31,7 +31,7 @@ docker
 
 * Whenever you don't remember a command, just type docker
 * For more info, type `docker help COMMAND` (e.g. `docker help run`)
-* If you want to use autocomplete capabilities in Mac:
+* If you want to use autocomplete capabilities in [Mac](http://superuser.com/questions/288438/bash-completion-for-commands-in-mac-os-x/288491#288491):
 
 ```shell
 homebrew install bash-completion
