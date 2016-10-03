@@ -276,7 +276,7 @@ docker push $REGISTRY/$(whoami)/hello-world
 
 * Push your website to the local Registry (use your github username)
 * Push your website image
-* Share your image name on [Slack](https://dockerbcn.herokuapp.com)
+* Share your image name with your buddies
 
 ### PULL Image from a Repository
 
