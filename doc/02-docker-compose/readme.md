@@ -20,7 +20,7 @@ Using Compose is basically a three-step process:
 
 Check the available commands of Docker Compose. Type in your terminal:
 
-```
+```shell
 docker-compose
 ```
 
@@ -54,7 +54,7 @@ ADD . /code/
 CMD ["node", "main.js"]
 ```
 
-We use the base image of `mhart/alpine-node`. Although it's not the official nodejs image, we preferred to use it because it's based in Alpine, a light linux distribution. 
+We use the base image of `mhart/alpine-node`. Although it's not the official nodejs image, we preferred to use it because it's based in Alpine, a light linux distribution.
 
 The `Dockerfile` then creates the directory where our code will be stored, `/code`, and it copies the `package.json` so it can install the node dependencies.
 
@@ -85,7 +85,7 @@ In this case, we defined two services, `redis` that uses `redis:alpine` and `web
 ### Build the images
 
 With docker-compose we can build all the images at once running:
-```
+```shell
 docker-compose build
 ```
 
@@ -93,7 +93,7 @@ The `docker-compose build` reads `docker-compose.yml` and build all the services
 
 ### Run a command against a service
 We can run a one-time command against a service. For example, the following command starts the `web` service and runs `sh` as its command.
-```
+```shell
 docker-compose run web sh
 ```
 
@@ -107,18 +107,18 @@ The second difference is the `docker-compose run` command does not create any of
 
 We can run `docker-compose up` that builds, (re)creates, starts, and attaches to containers for a service. Unless they are already running, this command also starts any linked services.
 
-Type in your terminal: 
+Type in your terminal:
 
-```
+```shell
 docker-compose up
 ```
 
-This instructs Compose to run the services defined in the `docker-compose.yml` in containers, using the `redis` image and the `web` service's image and configuration. 
+This instructs Compose to run the services defined in the `docker-compose.yml` in containers, using the `redis` image and the `web` service's image and configuration.
 
 The docker-compose up command aggregates the output of each container. When the command exits, all containers are stopped.
 
 If we want, we can run the containers in background with `-d` flag:
-```
+```shell
 docker-compose up -d
 ```
 
@@ -127,52 +127,52 @@ At this point, your Node app should be running at port `8088` on your Docker hos
 ### Logs
 
 We can see the log output from services running:
-```
+```shell
 docker-compose logs
 ```
 
 If we want to review the logs of a specific service, e.g. `web`:
-```
+```shell
 docker-compose logs web
 ```
 
 ### List containers
 
 We can run `ps` like in `docker ps` to list containers and their status:
-```
+```shell
 docker-compose ps
 ```
 
 ### Stop containers
 
-```
-docker-compose stop 
+```shell
+docker-compose stop
 ```
 
 Stops running containers without removing them. They can be started again with `docker-compose start`.
 
 If we want we can stop only one container:
-```
+```shell
 docker-compose stop web
 ```
 
 ### Start container
 
 Starts existing containers for a service, e.g. `web`:
-```
+```shell
 docker-compose start web
 ```
 
 ### Remove containers
-```
+```shell
 docker-compose rm
 ```
 
-The previous command removes __stopped__ service containers. 
+The previous command removes __stopped__ service containers.
 
 If we want to stop and remove them:
 
-```
+```shell
 docker-compose down
 ```
 

@@ -16,23 +16,23 @@ The toolbox installs a handful of tools on your local Windows or Mac OS X comput
 
 ## Create a VM running Docker
 
-Open a terminal on your computer. 
+Open a terminal on your computer.
 
 Create and run a VM named `default` using the following command:
 
-```
+```shell
 docker-machine create -d virtualbox default
 ```
 
 You can list the existing docker-machines:
 
-```
+```shell
 docker-machine ls
 ```
 
 In case you already had the machine created, you can simply start the VM:
 
-```
+```shell
 docker-machine start default
 ```
 
@@ -41,14 +41,14 @@ docker-machine start default
 Now, let's use the docker-machine we've just created. We want to run the `hello-world`.
 
 If you use Mac, you need to run:
-```
+```shell
 eval $(docker-machine env default)
 ```
 
 This command set the `DOCKER_HOST` variable to the IP of your `default` `docker-machine`.
 
 Then we can run the `hello-world` container:
-```
+```shell
 docker run hello-world
 ```
 
@@ -58,13 +58,13 @@ After we tested our `default` `docker-machine` we want to remove it from our com
 
 Stop the VM named `default`:
 
-```
+```shell
 docker-machine stop default
 ```
 
 You can destroy the VM named `default`:
 
-```
+```shell
 docker-machine rm default
 ```
 
@@ -72,20 +72,20 @@ docker-machine rm default
 
 To create two machines do:
 
-```
+```shell
 docker-machine create -d virtualbox client1
 docker-machine create -d virtualbox client2
 ```
 
 Now you can see the machines with:
 
-```
+```shell
 docker-machine ls
 ```
 
 ## Run Nginx on client1
 
-```
+```shell
 eval $(docker-machine env client1)
 docker run -d -p 80:80 nginx:1.8-alpine
 docker-machine ip client1
@@ -94,7 +94,7 @@ open "http://$(docker-machine ip client1)"
 
 ## Run Nginx on client2
 
-```
+```shell
 eval $(docker-machine env client2)
 docker run -d -p 80:80 nginx:1.8-alpine
 docker-machine ip client2
@@ -105,7 +105,7 @@ open "http://$(docker-machine ip client2)"
 
 To SSH inside a machine:
 
-```
+```shell
 docker-machine ssh client1
 ```
 
@@ -113,7 +113,7 @@ docker-machine ssh client1
 
 Docker client is configured by environment variables to connect with remote daemons. The following command outputs the variables for connecting to previously created `default` VM.
 
-```
+```shell
 docker-machine env default
 ```
 
@@ -121,23 +121,23 @@ docker-machine env default
 
 To get the active machine's name do:
 
-```
+```shell
 docker-machine active
 ```
 
 ## Cleanup
 
 
-```
+```shell
 docker-machine stop client1 client2
 docker-machine rm client1 client2
 ```
 
 
-# Navigation 
+# Navigation
 
-Previous | Next 
-:------- | ---: 
+Previous | Next
+:------- | ---:
 ← [Docker Workshop - Docker Basics](../00-docker-basics) | [Docker Workshop - Docker Compose](../02-docker-compose) →
 
 # Credits

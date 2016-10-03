@@ -13,7 +13,7 @@ This section is separated in:
 
 Check you have latest version of docker installed:
 
-```
+```shell
 docker version
 ```
 
@@ -25,7 +25,7 @@ docker version
 
 Check the available docker commands
 
-```
+```shell
 docker
 ```
 
@@ -46,7 +46,7 @@ fi
 
 ### RUN a "Hello World" container
 
-```
+```shell
 docker run alpine echo "Hello World"
 ```
 
@@ -55,7 +55,7 @@ docker run alpine echo "Hello World"
 
 ### RUN an interactive Container
 
-```
+```shell
 docker run -it alpine sh
   cat /etc/os-release
 ```
@@ -65,13 +65,13 @@ docker run -it alpine sh
 
 ### RUN a Container with pipeline
 
-```
+```shell
 cat /etc/resolv.conf | docker run -i alpine wc -l
 ```
 
 ### SEARCH a Container
 
-```
+```shell
 docker search -s 10 nginx
 ```
 
@@ -80,13 +80,13 @@ docker search -s 10 nginx
 ### RUN a Container and expose a Port
 
 On Linux:
-```
+```shell
 docker run -d -p 4000:80 nginx
 google-chrome localhost:4000
 ```
 
 On Mac:
-```
+```shell
 docker run -d -p 4000:80 nginx
 open "http://localhost:4000"
 ```
@@ -100,13 +100,13 @@ open "http://localhost:4000"
 NOTE: Make sure to be on `Docker Workshop` directory since we'll use volume mounts in the containers of directories of the repository.
 
 On Linux:
-```
+```shell
 docker run -d -p 4001:80 -v $(pwd)/code/hello-world/site/:/usr/share/nginx/html:ro nginx
 google-chrome localhost:4001
 ```
 
 On Mac:
-```
+```shell
 docker run -d -p 4001:80 -v $(pwd)/code/hello-world/site/:/usr/share/nginx/html:ro nginx
 open "http://localhost:4001"
 ```
@@ -127,7 +127,7 @@ open "http://localhost:4001"
 
 Create a Git Container manually:
 
-```
+```shell
 docker run -it --name git alpine sh
   apk --update add git
   git version
@@ -146,7 +146,7 @@ docker rmi docker-git
 
 Create a Git Container with Dockerfile:
 
-```
+```shell
 cd code/docker-git
 docker build -t docker-git .
 docker run -it docker-git git version
@@ -168,19 +168,19 @@ RUN apk add git
 
 Create an Apache Server Container with Dockerfile:
 
-```
+```shell
 cd code/docker-apache2
 docker build -t docker-apache2 .
 docker run -d -p 4003:80 docker-apache2
 ```
 
 On Linux:
-```
+```shell
 google-chrome localhost:4003
 ```
 
 On Mac:
-```
+```shell
 open "http://localhost:4003"
 ```
 
@@ -198,19 +198,19 @@ CMD httpd -D FOREGROUND
 
 ### BUILD a Static website Image
 
-```
+```shell
 cd code/hello-world
 docker build -t hello-world .
 docker run -d --name hello -P hello-world
 ```
 
 On Linux:
-```
+```shell
 google-chrome $(docker port hello 80 | sed 's/0.0.0.0://g')
 ```
 
 On Mac:
-```
+```shell
 open "http://localhost:$(docker port hello 80 | sed 's/0.0.0.0://g')"
 ```
 
@@ -235,7 +235,7 @@ ADD site /usr/share/nginx/html
 
 For this step, we'll need to launch a registry:
 
-```
+```shell
 docker run -d -p 5000:5000 --name registry registry:2
 ```
 
@@ -258,25 +258,25 @@ docker push $REGISTRY/$(whoami)/hello-world
 
 ### PULL Image from a Repository
 
-```
+```shell
 docker pull $REGISTRY/$(whoami)/hello-world
 docker run -d -P --name=registry-hello $REGISTRY/$(whoami)/hello-world
 ```
 
 On Linux:
-```
+```shell
 google-chrome $(docker port registry-hello 80)
 ```
 
 On Mac:
-```
+```shell
 open "http://localhost:$(docker port registry-hello 80 | sed 's/0.0.0.0://g')"
 ```
 
 * **pull**: Pull an image or a repository from a Docker registry server
 
 
-# Navigation 
+# Navigation
 
 Previous | Next
 :------- | ---:
