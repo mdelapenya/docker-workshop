@@ -31,6 +31,18 @@ docker
 
 * Whenever you don't remember a command, just type docker
 * For more info, type `docker help COMMAND` (e.g. `docker help run`)
+* If you want to use autocomplete capabilities in Mac:
+
+```shell
+homebrew install bash-completion
+curl -XGET https://raw.githubusercontent.com/docker/docker/master/contrib/completion/bash/docker > `brew --prefix`/etc/bash_completion.d/docker
+```
+Don't forget to add this to your .bashrc
+```shell
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+```
 
 ### RUN a "Hello World" container
 
