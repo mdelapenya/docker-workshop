@@ -136,6 +136,11 @@ If we want to review the logs of a specific service, e.g. `web`:
 docker-compose logs web
 ```
 
+If we want to follow the logs like Linux `tail` command:
+```shell
+docker-compose logs --follow web
+```
+
 ### List containers
 
 We can run `ps` like in `docker ps` to list containers and their status:
