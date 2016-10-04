@@ -34,7 +34,7 @@ docker
 * If you want to use autocomplete capabilities in [Mac](http://superuser.com/questions/288438/bash-completion-for-commands-in-mac-os-x/288491#288491):
 
 ```shell
-homebrew install bash-completion
+brew install bash-completion
 curl -XGET https://raw.githubusercontent.com/docker/docker/master/contrib/completion/bash/docker > `brew --prefix`/etc/bash_completion.d/docker
 ```
 Don't forget to add this to your .bashrc
