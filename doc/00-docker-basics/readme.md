@@ -81,19 +81,19 @@ docker search -s 10 nginx
 
 On Linux:
 ```shell
-docker run -d -p 4000:80 nginx
+docker run -d -p 4000:80 nginx:1.8-alpine
 google-chrome localhost:4000
 ```
 
 On Mac:
 ```shell
-docker run -d -p 4000:80 nginx
+docker run -d -p 4000:80 nginx:1.8-alpine
 open "http://localhost:4000"
 ```
 
 On Windows:
 ```shell
-docker run -d -p 4000:80 nginx
+docker run -d -p 4000:80 nginx:1.8-alpine
 start chrome "http://localhost:4000"
 ```
 
