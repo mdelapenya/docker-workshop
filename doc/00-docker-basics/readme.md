@@ -47,7 +47,7 @@ fi
 ### RUN a "Hello World" container
 
 ```shell
-docker run alpine echo "Hello World"
+docker run alpine:3.3 echo "Hello World"
 ```
 
 * If the Image is not cached, it pulls it automatically
@@ -66,7 +66,7 @@ docker run -it alpine sh
 ### RUN a Container with pipeline
 
 ```shell
-cat /etc/resolv.conf | docker run -i alpine wc -l
+cat /etc/resolv.conf | docker run -i alpine:3.3 wc -l
 ```
 
 ### SEARCH a Container
