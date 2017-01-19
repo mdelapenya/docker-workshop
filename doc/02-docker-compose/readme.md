@@ -44,7 +44,7 @@ We've already created a simple app in `code/guestbook-node` that uses node.js wi
 
 2. Review `Dockerfile`:
 
-```
+```shell
 FROM mhart/alpine-node:latest
 RUN mkdir /code
 WORKDIR /code
@@ -62,7 +62,7 @@ Afterwards it copies all the code we have in the host machine and runs the comma
 
 3. Review `docker-compose.yml`:
 
-```
+```yaml
 version: '2'
 services:
   redis:

@@ -263,7 +263,7 @@ docker run -d -p 5000:5000 --name registry registry:2
 
 Then tag your image under the registry namespace and push it there:
 
-```
+```shell
 REGISTRY=localhost:5000
 docker tag hello-world $REGISTRY/$(whoami)/hello-world
 docker push $REGISTRY/$(whoami)/hello-world
