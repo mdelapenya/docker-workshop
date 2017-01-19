@@ -1,19 +1,10 @@
 version: '2'
 services:
-  nginx:
-    build: ./nginx
-    links:
-        - web1:web1
-        - web2:web2
-    ports:
-        - "81:80"
   redis:
     image: redis:alpine
-  web1:
+  web:
     build: .
-    depends_on:
-      - redis
-  web2:
-    build: .
+    ports:
+      - "80:3000"
     depends_on:
       - redis
