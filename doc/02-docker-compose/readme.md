@@ -97,7 +97,7 @@ We can run a one-time command against a service. For example, the following comm
 docker-compose run web sh
 ```
 
-Commands you use with `run` start in new containers with the same configuration as defined by the service's configuration. This means the container has the same volumes, links, as defined in the configuration file. There two differences though.
+Commands you use with `run` start in new containers with the same configuration as defined by the service's configuration. This means the container has the same volumes, links, as defined in the configuration file. There are two differences though.
 
 First, the command passed by `run` overrides the command defined in the service configuration. For example, if the `web` service configuration is started with `node`, then `docker-compose run web sh` overrides it with `sh`.
 
